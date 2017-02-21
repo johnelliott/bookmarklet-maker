@@ -1,0 +1,17 @@
+{
+  "name": "bookmarklet maker",
+  "version": "1.0.0",
+  "description": "make bookmarklets from node modules",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.1.8",
+    "uglify-js": "^2.7.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "copy": "node index.js | pbcopy"
+  },
+  "author": "John Elliott <johnelliott703@gmail.com>",
+  "license": "ISC"
+}

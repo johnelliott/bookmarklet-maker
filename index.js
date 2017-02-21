@@ -1,9 +1,9 @@
 var transform = require('babel-core').transform
-var minify = require("uglify-js").minify
+var minify = require('uglify-js').minify
 var copyLinks = require('./copy-links')
 
 module.exports = function makeBookmarklet () {
- return `javascript:((${build()})())`
+  return `javascript:((${build()})())`
 }
 
 if (require.main === module) {

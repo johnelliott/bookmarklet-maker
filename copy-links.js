@@ -1,4 +1,4 @@
-module.exports = function copyLinks() {
+module.exports = function copyLinks () {
   // get page links in an array
   var links = Array.from(document.getElementsByTagName('a')).map(function (l) { return l.href })
 
@@ -19,12 +19,12 @@ module.exports = function copyLinks() {
   var r = document.createRange()
   r.selectNode(div)
   var sel = window.getSelection()
-  // Unselect text if user has it selected to 
+  // Unselect text if user has it selected to
   sel.removeAllRanges()
   // Select the text in our range
   sel.addRange(r)
 
   document.execCommand('copy')
- 
+
   div.parentNode.removeChild(div)
 }
